@@ -1,5 +1,5 @@
 package org.iesalandalus.programacion.reservasaulas.mvc.modelo.negocio;
-/*
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -17,9 +17,9 @@ import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Reserva;
 import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Permanencia;
 import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Tramo;
 import org.junit.Test;
-*/
+
 public class ReservasTest {
-/*	
+	
 	private static final String NOMBRE_PROFESOR1 = "José Ramón";
 	private static final String NOMBRE_PROFESOR2 = "Andrés";
 	private static final String CORREO = "a@b.cc";
@@ -222,7 +222,7 @@ public class ReservasTest {
 			reservas.borrar(null);
 			fail(ERROR_EXCEPCION);
 		} catch (NullPointerException e) {
-			assertEquals("ERROR: No se puede anular una reserva nula.", e.getMessage());
+			assertEquals("ERROR: No se puede borrar una reserva nula.", e.getMessage());
 			assertEquals(4, reservas.getNumReservas());
 		} catch (OperationNotSupportedException e) {
 			fail(ERROR_NO_EXCEPCION);
@@ -279,7 +279,7 @@ public class ReservasTest {
 		} 
 		catch (NullPointerException e) 
 		{
-			assertEquals("ERROR: No se puede buscar un reserva nula.", e.getMessage());
+			assertEquals("ERROR: No se puede buscar una reserva nula.", e.getMessage());
 		}
 	}
 	
@@ -355,5 +355,5 @@ public class ReservasTest {
 			assertEquals("ERROR: No se puede consultar la disponibilidad de una permanencia nula.", e.getMessage());
 		}
 	}
-*/
+
 }
